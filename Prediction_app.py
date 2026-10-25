@@ -68,8 +68,7 @@ pred_prob = model.predict_proba(df)
 
 
 st.subheader('Predicted Survival')
-st.write('WoW (Got another Day to Live' if pred[0]== 1 else 'Haa! Yumraj spotted. Better luck next time!')
-
+st.write('Looks like you made it to the lifeboat, you survived VIP!' if pred[0] == 1 else 'Poseidon says hello down there. You are dead.')
 
 # In[35]:
 
